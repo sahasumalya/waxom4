@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+    	<link rel="stylesheet" href="owl/dist/assets/owl.carousel.css">
+      <link rel="stylesheet" href="owl/owl-theme.default.css">
+
+   
+
+		<title> owl</title>
+<style>
+.owl-carousel .owl-nav .custom1{
+position:absolute;
+top:5%;
+left:7%;
+width: 32px;
+height: 32px;
+    background-image:url(images/back.png);
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.owl-carousel .owl-nav .custom2{
+    
+    position:absolute;
+    top:5%;
+    right:7%;
+    background-image:url("images/next.png");
+    width: 32;
+    height: 32px;
+  
+
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.owl-carousel .owl-nav{
+  position:absolute;
+  top:70%;
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+.owl-carousel .owl-dots{
+  position:absolute;
+  bottom:2%;
+  left:45%;
+}
+.item1{
+  width:100%;
+  height:100%;
+  background-image:url("images/grid.png");
+  background-size:cover;
+  max-width: 100%;
+  margin:0px;
+  padding:0px;
+}
+
+header{
+  width:100%;
+  height:75%;
+}
+</style>
+	</head>
+	<body>
+  <header>
+  
+		<div class="owl-carousel">
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+    
+    
+  </div>
+  </header>
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  </div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="owl/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function() {
+        $(".owl-carousel").owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    center:true,
+    autoplay:false,
+    navText:false,
+
+    slideBy:1,
+    navClass:["custom1","custom2"],
+
+    
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+      
+    });
+				
+	</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
