@@ -1,7 +1,5 @@
 
-.container{
-  overflow:hidden;
-}
+
 header {
 
   height:100%;
@@ -486,6 +484,9 @@ text-align: center;
 
 }
 .item{
+.container{
+  overflow:hidden;
+}
 height:auto;
 padding-top:6em;
 padding-bottom:4em;
@@ -990,8 +991,12 @@ text-align: center;
     }
 }
 .phone{
+
 background-color:  #fbfaf8;
 padding-top:5em;
+.container{
+  overflow:hidden;
+}
 	.pn{
 	
 	
@@ -1082,7 +1087,9 @@ margin:0%;
 }
 .car{
   
-  
+  .container{
+  overflow:hidden;
+  }
   background-color:  #fbfaf8;
   height:auto;
   padding-top:2.25em;
@@ -1145,6 +1152,7 @@ margin:0%;
 
 }
 .animate{
+overflow:visible;
   padding-bottom:8em;
   padding-top:2em;
 button{
