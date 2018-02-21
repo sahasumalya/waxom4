@@ -1,7 +1,9 @@
 
 
 header {
-
+  .container{
+  overflow:hidden;
+  }
   height:100%;
   .wrap1{
   	position:absolute;
@@ -529,7 +531,9 @@ margin:auto;
 }
 .waxom{
 background-color:  #fbfaf8;
-
+.container{
+  overflow:hidden;
+}
 .wax{
 	
 
@@ -554,6 +558,7 @@ text-align: center;
  
 }
 .multi{
+
 background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
 background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
 background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
@@ -561,6 +566,9 @@ background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
 background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
 padding-top:3em;
 padding-bottom:3em;
+.container{
+  overflow:hidden;
+}
 .waxom{
 font-family: Raleway;
 color:  #c7b299;
@@ -659,6 +667,9 @@ margin-bottom:0%;
 .latest{
   padding-top:5em;
   padding-bottom:2.5em;
+  .container{
+    overflow:hidden;
+  }
 	h1.late{
 font-family: Raleway;
 color:  #555555;
@@ -949,6 +960,9 @@ padding:0.25em;
   height:auto;
   padding-top:15em;
   padding-bottom:13em;
+  .container{
+    overflow:hidden;
+  }
     .v{
    
     }
@@ -1152,7 +1166,6 @@ margin:0%;
 
 }
 .animate{
-overflow:visible;
   padding-bottom:8em;
   padding-top:2em;
 button{
@@ -1384,7 +1397,9 @@ margin:0%;
     height: auto;
     padding-top:3em;
     padding-bottom:10em;
-   
+    .container{
+      overflow:hidden;
+    }
     .lol{
     
     }
@@ -1423,6 +1438,9 @@ footer{
 	background-color:  #191919;
   padding-top:5em;
   padding-bottom:5em;
+  .container{
+    overflow:hidden;
+  }
 	.wax{
     font-family: Raleway;
 color:  #ffffff;
@@ -1661,6 +1679,9 @@ font-size: 13px;/* Approximation due to font substitution */
 font-weight: 300;
 line-height: 20px;/* Approximation due to font substitution */
 text-align: left;
+.container{
+  overflow:hidden;
+}
  a{
     text-decoration:none;
     font-family: Montserrat;
@@ -1704,6 +1725,9 @@ text-align: left;
 background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
 padding-top:3.5em;
 padding-bottom:3.5em;
+.container{
+  overflow:hidden;
+}
 	.icon1{
 
 	}
