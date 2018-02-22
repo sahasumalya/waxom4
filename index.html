@@ -1,4 +1,5 @@
 <html>
+ 
 	<head>
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +21,9 @@
 		<title> final </title>
 
 	</head>
-	<body>
-		<header style="overflow:hidden">
+	<body onload="myLoad()">
+    <div id="loader"></div>
+		<header id="heed">
 			<div class="owl-carousel">
         <div class="container-fluid item1"></div>
         <div class="container-fluid item2"></div>
@@ -38,20 +40,19 @@
               </div>
 
             </div>
-              <div class="row row2 " data-aos="fade-up">
+              <div class="row row2 " data-aos="fade-down" data-aos-duration="1500">
             <div class="col-md-12 col-sm-12 col-xs-12 text-center">
               <h3>Unique and Modern Design</h3>
             </div>
           </div>
-          <div class="row row3 " data-aos="zoom-out
-          ">
+          <div class="row row3 " data-aos="zoom-out" data-aos-duration="1500">
             <div class="col-md-12 col-sm-12 col-xs-12 text-center">
               <h1 class="port">Portfolio PSD Template</h1>
 
             </div>
           </div>
           <div class="row row4">
-            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center" data-aos="fade-up" data-aos-duration="2000">
               <p class="t3">Nam liber tempor cun soluta nobls elefend options congue nihll imper-<br>
                       diet doming id quod mazim placerat facer possim assum</p>
               
@@ -105,8 +106,8 @@
                        <li class="nav-item">
                           <a class="nav-link " href="#">Contacts</a>
                        </li>
-                     <li class="nav-item">  <button class="button search" type="submit">
-                          <i class="fa fa-search" style="color:white ;font-size:20px;padding-top:0.5em"></i>
+                     <li class="nav-item">  <button class="button search" onclick="search()" type="submit">
+                         <input class="ser" id="ssh" type="text"> <i class="fa fa-search" style="color:white ;font-size:20px;padding-top:0.5em"></i>
                   </button></li>
    <li class="nav-item"> <button class="button bag" type="submit">
                           <i class="fa fa-shopping-bag " style="color:white;font-size:20px;padding-top:0.5em"></i>
@@ -128,7 +129,7 @@
       <img  class="logo1" src="images/logos.png">
       <img class="wax1" src="images/Waxom.png">
 		</header>
-		<section class="item">
+		<section class="item" id="itemm">
 			<div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-12 text-center overlay padm" data-aos="fade-right" data-aos-duration="1500">
@@ -166,7 +167,7 @@
         </div>
       </div>
 		</section>
-		<section class="waxom">
+		<section class="waxom" id="waxomm">
 			<div class="container">
 					<div class="row row1" data-aos="flip-left" data-aos-duration="2000">
 						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
@@ -182,7 +183,7 @@
 					</div>
 			</div>
 		</section>
-		<section class="car">
+		<section class="car" id="carr">
 			<div class="container car1">
 
         
@@ -202,16 +203,17 @@
            
           
         </div>
-			</div>
+			
 		</section>
-		<section class="multi">
+		<section class="multi" id="multii">
 			<div class="container">
 					<div class="row row1">
 						<div class="col-md-7 col-sm-12 col-xs-12 text-center theme">
 							<p class="waxom">Waxom <span class="m">Multipurpose Wordpress Theme</span><br><span class="forget">Dont forget to rate the template .Thanks so much</span></p>
+
 						</div>
-						<div class="col-md-2 col-md-offset-3 col-sm-12 col-xs-12 text-center theme thm wow shake"  data-wow-duration="3s" >
-							<button class="purchase">PURCHASE</button>
+						<div class="col-md-2 col-md-offset-3 col-sm-12 col-xs-12 text-center theme thm "  data-wow-duration="3s">
+							<p><i class="fa fa-arrow-down ud" style="color:white"></i><button class="purchase wow shake">PURCHASE</button></p>
 						</div>
 						
 						
@@ -220,7 +222,7 @@
 				
 			</div>
 		</section>
-		<section class="latest">
+		<section class="latest" id="latestt">
 			<div class="container">
 					<div class="row row1">
 						<div class="col-md-12 col-sm-12 col-xs-12 text-center" data-aos="zoom-in" data-aos-duration="2000">
@@ -310,7 +312,7 @@
 				
 			</div>
 		</section>
-        <section class="video">
+        <section class="video" id="videoo">
         	<div class="container con">
         			<div class="row row1" > 
         				<div class="col-md-12 col-sm-12 col-xs-12 text-center vid">
@@ -324,7 +326,7 @@
         		
         	</div>
         </section>
-        <section class="phone">
+        <section class="phone" id="phonee">
         	<div class="container con">
         			<div class="row row1">
         				<div class="col-md-5 col-sm-12 col-xs-12 text-right spcl " data-aos="fade-right" data-aos-duration="2000">
@@ -353,7 +355,7 @@
         		
         	</div>
         </section>
-        <section class="banner">
+        <section class="banner" id="bannerr">
         	<div class="container">
         		
         			<div class="row row1">
@@ -395,7 +397,7 @@
         		
         	</div>
         </section>
-        <section class="recent">
+        <section class="recent" id="recentt">
         	<div class="container-fluid">
         			<div class="row row1">
         				<div class="col-md-12 col-sm-12 col-xs-12 text-center wow lightSpeedIn">
@@ -410,7 +412,7 @@
         		
         	</div>
         </section>
-        <section class="animate">
+        <section class="animate" id="animatee">
         	<div class="container">
             <div class="row wow rollIn" data-wow-duration="3s">
         			<div class="slic">
@@ -466,7 +468,7 @@
         		
         	</div>
         </section>
-        <section class="log">
+        <section class="log" id="logg">
         	<div class="container lol">
         			<div class="row row1">
         				<div class="col-md-3 col-sm-6 col-xs-12 pic text-center" data-aos="zoom-in" data-aos-duration="1500">
@@ -485,7 +487,7 @@
         		
         	</div>
         </section>
-        <footer>
+        <footer id="footeri">
         	<div class="container">
         			<div class="row row1">
         				<div class="col-md-3 col-sm-6 col-xs-6 text-center wow swing">
@@ -557,7 +559,7 @@
         		
         	</div>
         </footer>
-        <section class="copy">
+        <section class="copy" id="copyy">
           <div class="container">
             
               <div class="row row1">
@@ -873,7 +875,30 @@ function scrollWin1(){
     }
 
  </script>
- 
+ <script>
+ var count=0
+  function search(){
+    if(count%2==0)
+     document.getElementById("ssh").style.display="block";
+    else
+     document.getElementById("ssh").style.display="none"; 
+   count++;
+  }
+ </script>
+  <script>
+var myVar;
+
+function myLoad() {
+    myVar = setTimeout(showPage, 5000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("heed").style.display = "block";
+}
+</script>
 
 	</body>
+ 
+
 </html>
