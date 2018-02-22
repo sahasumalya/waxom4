@@ -606,12 +606,29 @@ padding-bottom:3em;
     from {top:0em;}
     to {top:0.5em;}
 }
+@keyframes left-right {
+    from {left:0em;}
+    to {right:0.5em;}
+}
+
 .ud{
   position:relative;
     animation-name: up-down;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+@media only screen and (max-width:990px)
+{
+  .ud{
+    position:relative;
+    transform:rotate(270deg);
+    animation-name: left-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+  }
 }
 .waxom{
 font-family: Raleway;
