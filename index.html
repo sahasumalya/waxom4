@@ -81,7 +81,7 @@
            </div>
            <div class="collapse navbar-collapse" id="myNavbar">
             
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right snav">
         <li class="nav-item ">
                           <a  href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -316,7 +316,7 @@
         	<div class="container con">
         			<div class="row row1" > 
         				<div class="col-md-12 col-sm-12 col-xs-12 text-center vid">
-        					<div><img  class="img-responsive play wow rollIn" data-wow-duration="2s" src="images/icon-play.png"></div>
+        					<div>><img  class="img-responsive play "  src="images/icon-play.png"></div>
         				 				
         					<p class="waxom" data-aos="slide-down" data-aos-duration="3000">Waxom Video Representation</p>
         					<p class="sub wow lightSpeedIn" data-wow-duration="3s">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.Claritus est etiam<br>        dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -342,10 +342,10 @@
                       tempor incididunt ut labore et dolore magna aliqua</p>
        					    <ul class="hl">
                       
-                       <li> <span class="bulet">Nam liber tempor cum soluta nobis elelfend option.</span><br></li>
-       					       <li> <span class="bulet">Nam liber tempor cum soluta nobis elelfend option.</span><br></li>
-       					        <li><span class="bulet">Nam liber tempor cum soluta nobis elelfend option.</span><br></li>
-       					        <li><span class="bulet">Nam liber tempor cum soluta nobis elelfend option.</span><br></li>
+                       <li class="hu"> <span class="bulet">Nam liber tempor cum soluta nobis elelfend option.</span><br></li>
+       					       <li class="hu"> <span class="bulet">Nam liber tempor cum soluta nobis elelfend option.</span><br></li>
+       					        <li class="hu"><span class="bulet">Nam liber tempor cum soluta nobis elelfend option.</span><br></li>
+       					        <li class="hu"><span class="bulet">Nam liber tempor cum soluta nobis elelfend option.</span><br></li>
                       
                     </ul>
                   </div>
@@ -414,7 +414,7 @@
         </section>
         <section class="animate" id="animatee">
         	<div class="container">
-            <div class="row wow rollIn" data-wow-duration="3s">
+            <div class="row wow zoomIn" data-wow-duration="3s">
         			<div class="slic">
         				<div class="slicitem">
         					<div class="dat">
@@ -490,14 +490,14 @@
         <footer id="footeri">
         	<div class="container">
         			<div class="row row1">
-        				<div class="col-md-3 col-sm-6 col-xs-6 text-center wow swing">
+        				<div class="col-md-3 col-sm-6 col-xs-6 text-center wow fadeInUp">
         				  <p class="wax"><img class="logo" src="images/logos.png"> Waxom</p>
         				  <p class="txt">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do<br> eiusmod
           							tempor incididunt ut<br> labore et dolore magna aliqua.</p>
                   <p class="read"><a style="color:white" href="#">Read More <i class="fa fa-caret-right" style="color:white;padding-left:0.5em"></i></a></p>
 
         				</div>
-                <div class="col-md-3 col-sm-6 col-xs-6 colu wow swing" >
+                <div class="col-md-3 col-sm-6 col-xs-6 colu wow fadeInDown" >
                  <h class="rec">Recent Posts</h>
                  <ul>
                   
@@ -517,7 +517,7 @@
                   </li>
                  </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 colu text-left wow swing" >
+                <div class="col-md-3 col-sm-6 col-xs-6 colu text-left wow fadeInUp" >
                 <h class="tw">Our Twitter</h>
                  <ul>
                   
@@ -537,7 +537,7 @@
                   </li>
                  </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 colu1 text-center wow swing" >
+                <div class="col-md-3 col-sm-6 col-xs-6 colu1 text-center wow fadeInDown" >
                   <p class="container-fluid rec">Dribbble Widget</p>
                   <div class="dr">
                     <div class="dm1">
@@ -718,47 +718,193 @@ function scrollWin1(){
  function fun1()
  {
   document.getElementById("suma1").src="images/photo2.png";
+  $("#suma1").addClass("animated fadeInRight");
+   setTimeout(function(){
+    $("#suma1").removeClass("animated fadeInRight");
+  },500);
+
+ /* document.getElementById("suma1").src="images/photo2.png";
+  $("#suma1").addClass("animated fadeInRight");
+  setTimeout(function(){
+    $("#suma1").removeClass("animated fadeInRight");
+  },500);
+  //$("#suma1").addClass("animated flip");
+  */
   document.getElementById("suma2").src="images/photo3.png";
-  document.getElementById("suma3").src="images/photo4.png";
-  document.getElementById("suma4").src="images/photo5.png";
-  document.getElementById("suma5").src="images/photo6.png";
-  document.getElementById("suma6").src="images/photo1.png";
+  $("#suma2").addClass("animated fadeInRight");
+   setTimeout(function(){
+    $("#suma2").removeClass("animated fadeInRight");
+  },500);
+  document.getElementById("suma3").src="images/photo6.png";
+  $("#suma3").addClass("animated fadeInUp");
+   setTimeout(function(){
+    $("#suma3").removeClass("animated fadeInUp");
+  },500);
+  document.getElementById("suma4").src="images/photo1.png";
+  $("#suma4").addClass("animated fadeInDown");
+   setTimeout(function(){
+    $("#suma4").removeClass("animated fadeInDown");
+  },500);
+  document.getElementById("suma5").src="images/photo4.png";
+  $("#suma5").addClass("animated fadeInLeft");
+   setTimeout(function(){
+    $("#suma5").removeClass("animated fadeInLeft");
+  },500);
+  document.getElementById("suma6").src="images/photo5.png";
+  $("#suma6").addClass("animated fadeInLeft");
+   setTimeout(function(){
+    $("#suma6").removeClass("animated fadeInLeft");
+  },500);
+  
+  
  }
  function fun2()
  {
   document.getElementById("suma1").src="images/photo3.png";
+  $("#suma1").addClass("animated rotateInDownLeft");
+   setTimeout(function(){
+    $("#suma1").removeClass("animated rotateInDownLeft");
+  },500);
   document.getElementById("suma2").src="images/photo4.png";
+  $("#suma2").addClass("animated zoomIn");
+   setTimeout(function(){
+    $("#suma2").removeClass("animated zoomIn");
+  },500);
   document.getElementById("suma3").src="images/photo5.png";
+  $("#suma3").addClass("animated rotateInDownRight");
+   setTimeout(function(){
+    $("#suma3").removeClass("animated rotateInDownRight");
+  },500);
   document.getElementById("suma4").src="images/photo6.png";
+  $("#suma4").addClass("animated rotateInUpLeft");
+   setTimeout(function(){
+    $("#suma4").removeClass("animated rotateInUpLeft");
+  },500);
   document.getElementById("suma5").src="images/photo1.png";
+  $("#suma5").addClass("animated zoomIn");
+   setTimeout(function(){
+    $("#suma5").removeClass("animated zoomIn");
+  },500);
   document.getElementById("suma6").src="images/photo2.png";
+  $("#suma6").addClass("animated rotateInDownRight");
+   setTimeout(function(){
+    $("#suma6").removeClass("animated rotateInDownRight");
+  },500);
  }
  function fun3()
  {
-  document.getElementById("suma1").src="images/photo4.png";
-  document.getElementById("suma2").src="images/photo5.png";
+ {
+  document.getElementById("suma1").src="images/photo2.png";
+  $("#suma1").addClass("animated fadeInRight");
+   setTimeout(function(){
+    $("#suma1").removeClass("animated fadeInRight");
+  },500);
+
+ /* document.getElementById("suma1").src="images/photo2.png";
+  $("#suma1").addClass("animated fadeInRight");
+  setTimeout(function(){
+    $("#suma1").removeClass("animated fadeInRight");
+  },500);
+  //$("#suma1").addClass("animated flip");
+  */
+  document.getElementById("suma2").src="images/photo3.png";
+  $("#suma2").addClass("animated fadeInRight");
+   setTimeout(function(){
+    $("#suma2").removeClass("animated fadeInRight");
+  },500);
   document.getElementById("suma3").src="images/photo6.png";
+  $("#suma3").addClass("animated fadeInUp");
+   setTimeout(function(){
+    $("#suma3").removeClass("animated fadeInUp");
+  },500);
   document.getElementById("suma4").src="images/photo1.png";
-  document.getElementById("suma5").src="images/photo2.png";
-  document.getElementById("suma6").src="images/photo3.png";
+  $("#suma4").addClass("animated fadeInDown");
+   setTimeout(function(){
+    $("#suma4").removeClass("animated fadeInDown");
+  },500);
+  document.getElementById("suma5").src="images/photo4.png";
+  $("#suma5").addClass("animated fadeInLeft");
+   setTimeout(function(){
+    $("#suma5").removeClass("animated fadeInLeft");
+  },500);
+  document.getElementById("suma6").src="images/photo5.png";
+  $("#suma6").addClass("animated fadeInLeft");
+   setTimeout(function(){
+    $("#suma6").removeClass("animated fadeInLeft");
+  },500);
+  
+  
+ }
  }
  function fun4()
  {
-  document.getElementById("suma1").src="images/photo5.png";
-  document.getElementById("suma2").src="images/photo6.png";
-  document.getElementById("suma3").src="images/photo1.png";
-  document.getElementById("suma4").src="images/photo2.png";
-  document.getElementById("suma5").src="images/photo3.png";
-  document.getElementById("suma6").src="images/photo4.png";
+  {
+  document.getElementById("suma1").src="images/photo3.png";
+  $("#suma1").addClass("animated rotateInDownLeft");
+   setTimeout(function(){
+    $("#suma1").removeClass("animated rotateInDownLeft");
+  },500);
+  document.getElementById("suma2").src="images/photo4.png";
+  $("#suma2").addClass("animated zoomIn");
+   setTimeout(function(){
+    $("#suma2").removeClass("animated zoomIn");
+  },500);
+  document.getElementById("suma3").src="images/photo5.png";
+  $("#suma3").addClass("animated rotateInDownRight");
+   setTimeout(function(){
+    $("#suma3").removeClass("animated rotateInDownRight");
+  },500);
+  document.getElementById("suma4").src="images/photo6.png";
+  $("#suma4").addClass("animated rotateInUpLeft");
+   setTimeout(function(){
+    $("#suma4").removeClass("animated rotateInUpLeft");
+  },500);
+  document.getElementById("suma5").src="images/photo1.png";
+  $("#suma5").addClass("animated zoomIn");
+   setTimeout(function(){
+    $("#suma5").removeClass("animated zoomIn");
+  },500);
+  document.getElementById("suma6").src="images/photo2.png";
+  $("#suma6").addClass("animated rotateInDownRight");
+   setTimeout(function(){
+    $("#suma6").removeClass("animated rotateInDownRight");
+  },500);
+ }
  }
  function fun5()
  {
-  document.getElementById("suma1").src="images/photo6.png";
-  document.getElementById("suma2").src="images/photo1.png";
-  document.getElementById("suma3").src="images/photo2.png";
-  document.getElementById("suma4").src="images/photo3.png";
-  document.getElementById("suma5").src="images/photo4.png";
-  document.getElementById("suma6").src="images/photo5.png";
+  {
+  document.getElementById("suma1").src="images/photo3.png";
+  $("#suma1").addClass("animated rotateInDownLeft");
+   setTimeout(function(){
+    $("#suma1").removeClass("animated rotateInDownLeft");
+  },500);
+  document.getElementById("suma2").src="images/photo4.png";
+  $("#suma2").addClass("animated zoomIn");
+   setTimeout(function(){
+    $("#suma2").removeClass("animated zoomIn");
+  },500);
+  document.getElementById("suma3").src="images/photo5.png";
+  $("#suma3").addClass("animated rotateInDownRight");
+   setTimeout(function(){
+    $("#suma3").removeClass("animated rotateInDownRight");
+  },500);
+  document.getElementById("suma4").src="images/photo6.png";
+  $("#suma4").addClass("animated rotateInUpLeft");
+   setTimeout(function(){
+    $("#suma4").removeClass("animated rotateInUpLeft");
+  },500);
+  document.getElementById("suma5").src="images/photo1.png";
+  $("#suma5").addClass("animated zoomIn");
+   setTimeout(function(){
+    $("#suma5").removeClass("animated zoomIn");
+  },500);
+  document.getElementById("suma6").src="images/photo2.png";
+  $("#suma6").addClass("animated rotateInDownRight");
+   setTimeout(function(){
+    $("#suma6").removeClass("animated rotateInDownRight");
+  },500);
+ }
  }
  
  </script>

@@ -38,6 +38,9 @@ header {
     padding:0%;
     display:none;
   }
+  .snav{
+
+  }
   .wrap1{
   	position:absolute;
     top:0%;
@@ -149,6 +152,9 @@ visibility:hidden;
     background-color:transparent;
 
   }
+.navbar-collapse{
+
+}
 @media only screen and (max-width:767px)
 {
   .navbar-collapse{
@@ -722,6 +728,12 @@ margin-bottom:0%;
   .container{
     overflow:hidden;
   }
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
 	h1.late{
 font-family: Raleway;
 color:  #555555;
@@ -1152,9 +1164,29 @@ margin:0%;
     background-position:left center;
 
   }
+  @keyframes play{
+     from{margin-left:0em}
+     to{margin-left:-3.3em}
+     from{margin-left:-3.3em}
+     to{margin-left:-0em}
+   }
+    
+  
+  
+  .hu:hover{
+    animation:play;
+      animation-duration:2s;
+      /*animation-iteration-count: infinite;*/
+      animation-delay:0s;
+      animation-timing-function: linear;
+    .bulet{
+      
+      
+    }
+  }
     @media only screen and (max-width: 525px) {
     li{
-     background-position:left top;
+     background-position:left center;
       
       
     }
