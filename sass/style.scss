@@ -500,11 +500,29 @@ font-weight: 1000;
 line-height: 23px;/* Approximation due to font substitution */
 text-align: center;
 }
-.get:hover{
-  background-color: #4e3427;
-  transform: rotateY(360deg);
-  transition-duration: 2s;
+@keyframes fd{
+  0%{
+    transform:scale(1);
+    color:#8c8c8c;
+    background-color:white;
+  }
+  50%{
+    transform:scale(1.2);
+    color:white;
+    background-color:#998675;
+  }
+  100%{
+    transform:scale(1);
+    color:#8c8c8c;
+    background-color:white;
 
+  }
+}
+.get:hover{
+  
+  animation-name: fd;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
   
 
 }
@@ -707,11 +725,33 @@ line-height: 23px;/* Approximation due to font substitution */
 text-align: center;
 vertical-align:center;
 }
+@keyframes fd{
+  0%{
+    transform:translate(0,20%);
+    transform:scale(1);
+    color:white;
+    background-color:#998675;
+  }
+  50%{
+    transform:translate(0,20%);
+    transform:scale(1.2);
+    color:grey;
+    background-color:white;
+  }
+  100%{
+    transform:translate(0,20%);
+    transform:scale(1);
+    color:white;
+    background-color:#998675;
 
+  }
+}
 
-button:hover{
+.purchase:hover{
 
-  opacity:0.5;
+  animation-name:fd;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 .forget{
 font-family: Montserrat;
@@ -734,6 +774,7 @@ margin-bottom:0%;
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
 }
+
 	h1.late{
 font-family: Raleway;
 color:  #555555;
@@ -960,10 +1001,28 @@ line-height: 23px;/* Approximation due to font substitution */
 text-align: center;
 font-style:bold;
 }
+@keyframes fd{
+  0%{
+    transform:scale(1);
+    color:white;
+    background-color:#998675;
+  }
+  50%{
+    transform:scale(1.2);
+    color:grey;
+    background-color:white;
+  }
+  100%{
+    transform:scale(1);
+    color:white;
+    background-color:#998675;
+
+  }
+}
 .buti:hover{
-  transform:scale(1.2);
-  color:grey;
-  background-color:white;
+  animation-name: fd;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 .row12{
   padding-top:2em;
@@ -1007,13 +1066,28 @@ padding:0.25em;
     transform:scale(1);
   }
  }
+ @keyframes fd1{
+  0%{
+    transform:scale(1);
+    color:#8c8c8c;
+    background-color:white;
+  }
+  50%{
+    transform:scale(1.2);
+    color:white;
+    background-color:#998675;
+  }
+  100%{
+    transform:scale(1);
+    color:#8c8c8c;
+    background-color:white;
+
+  }
+}
  button:hover{
- background-color:#998675;
- color:white;
- animation-name:ani;
- animation-duration: 2s;
- animation-name: anii;
- animation-duration: 2s;
+ animation-name: fd1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 }
 .video{
@@ -1052,8 +1126,8 @@ padding-top:1.3em;
    .play{
     margin:auto;
     animation:rotate-play;
-    animation-duration:1s;
-    animation-iteration-count: infinite;
+    animation-duration:1.5s;
+    animation-iteration-count: 2;
     animation-delay:0s;
     animation-timing-function: linear;
    }
@@ -1165,10 +1239,15 @@ margin:0%;
 
   }
   @keyframes play{
-     from{margin-left:0em}
-     to{margin-left:-3.3em}
-     from{margin-left:-3.3em}
-     to{margin-left:-0em}
+   0%{
+     margin-left:0em;
+   }
+   50%{
+     margin-left:-3.3em;
+     }
+   100%{
+    margin-left:-0em;}
+  
    }
     
   
@@ -1178,7 +1257,7 @@ margin:0%;
       animation-duration:2s;
       /*animation-iteration-count: infinite;*/
       animation-delay:0s;
-      animation-timing-function: linear;
+      animation-timing-function: ease-in-out;
     .bulet{
       
       
